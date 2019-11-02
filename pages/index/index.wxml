@@ -1,0 +1,171 @@
+<import src="../public/tem/tem.wxml" />
+<view class="top">
+  <image class="logo" src="https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png"></image>
+  <view class="iconfont icon-sousuo"></view>
+</view>
+
+<!-- 轮播图区域 -->
+<view>
+  <swiper class="lunbo" vertical="{{vertical}}" interval="{{interval}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" >
+    <swiper-item>
+      <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/15f453eb41ab4cb783dca5ccbd3d3f03.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/027d44b8c1f34fdfb655ec87157f7520.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/727b801043714688aadc6e99bc393280.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/15f453eb41ab4cb783dca5ccbd3d3f03.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 导航分类 -->
+<view class="nav">
+  <view>
+    <view>
+      <image src="https://m.boxuegu.com/web/images/index/course.png"></image>
+    </view>
+    <text>就业课</text>
+  </view>
+  <view>
+    <view>
+      <image src="https://m.boxuegu.com/web/images/index/mircoCourse.png"></image>
+    </view>
+    <text>就业课</text>
+  </view>
+  <view>
+    <view>
+      <image src="https://m.boxuegu.com/web/images/index/freeMicroCourse.png"></image>
+    </view>
+    <text>就业课</text>
+  </view>
+  <view>
+    <view>
+      <image src="https://m.boxuegu.com/web/images/index/courseType.png"></image>
+    </view>
+    <text>就业课</text>
+  </view>
+</view>
+
+<!-- 课程区 -->
+<view class="lesson">
+  <view class="lesson_top">
+    <view class="top_shugang">
+      <image class="iconfont icon-shouye_shugang_shijiantixing"></image>
+      <text>就业课</text>
+    </view>
+    <text>更多</text>
+  </view>
+  <!-- 模板循环区 -->
+  <block wx:for="{{lessons}}" wx:key="lessons">
+    <view class="lesson_bottom">
+      <view class="bottom_item">
+        <view>
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="item_info">
+          <view>{{item.title}}</view>
+          <view style="color:grey;font-size:10px;">{{item.content}}</view>
+          <view class="item_content">
+            <text>{{item.people}}</text>
+            <text style="color:red;">{{item.money}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- 推荐课程 -->
+<view class="lesson">
+  <view class="lesson_top">
+    <view class="top_shugang">
+      <image class="iconfont icon-shouye_shugang_shijiantixing"></image>
+      <text>推荐课程</text>
+    </view>
+    <text>更多</text>
+  </view>
+  <!-- 模板循环区 -->
+  <block wx:for="{{recommends}}" wx:key="recommends">
+    <view class="lesson_bottom">
+      <view class="bottom_item">
+      <!-- 横向两个view -->
+        <view>
+          <view>
+            <image src="{{item.img1}}"></image>
+          </view>
+          <view>
+            <text style="font-size:14px;">所有人都能学的数据...</text>
+            <view class="recommend_content">
+              <text style="color:grey;">710人学习</text>
+              <text style="color:red;">￥399.00</text>
+            </view> 
+          </view>
+        </view>
+
+        <view>
+          <view>
+            <image src="{{item.img2}}"></image>
+          </view>
+          <view>
+            <text style="font-size:14px;">所有人都能学的数据...</text>
+            <view class="recommend_content">
+              <text style="color:grey;">710人学习</text>
+              <text style="color:red;">￥399.00</text>
+            </view> 
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<!-- 免费课程 -->
+<view class="lesson">
+  <view class="lesson_top">
+    <view class="top_shugang">
+      <image class="iconfont icon-shouye_shugang_shijiantixing"></image>
+      <text>免费课程</text>
+    </view>
+    <text>更多</text>
+  </view>
+  <!-- 模板循环区 -->
+  <block wx:for="{{frees}}" wx:key="frees">
+    <view class="lesson_bottom">
+      <view class="bottom_item">
+      <!-- 横向两个view -->
+        <view>
+          <view>
+            <image src="{{item.img1}}"></image>
+          </view>
+          <view>
+            <text style="font-size:14px;">所有人都能学的数据...</text>
+            <view class="recommend_content">
+              <text style="color:grey;">710人学习</text>
+              <text style="color:red;">免费</text>
+            </view> 
+          </view>
+        </view>
+
+        <view>
+          <view>
+            <image src="{{item.img2}}"></image>
+          </view>
+          <view>
+            <text style="font-size:14px;">所有人都能学的数据...</text>
+            <view class="recommend_content">
+              <text style="color:grey;">710人学习</text>
+              <text style="color:red;">免费</text>
+            </view> 
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </block>
+</view>

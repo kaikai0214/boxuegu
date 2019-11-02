@@ -1,0 +1,128 @@
+/* 公共样式 */
+page{
+  background-color: #f5f5f5;
+    font-size:12px;
+}
+
+/* 顶部logo加搜索 */
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding:20rpx 20rpx;
+}
+.logo{
+  width:182rpx;
+  height: 52rpx;
+}
+
+/* 搜索字体 */
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1489446_1bqw1g6c4uy.eot?t=1572692488603'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1489446_1bqw1g6c4uy.eot?t=1572692488603#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALIAAsAAAAABmgAAAJ9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAp0gRYBNgIkAwgLBgAEIAWEbQcwG7wFyK6wKWP2WIF54k5w7Ki1+K8NABAiqN+P7b3/UE2qSTKeVTLeCJEklhlSp2QayUv4w047pl+kxM+zC5pxIIEGWGDb8furhavyrCobeHBiXc6HZh8PDg1KrFfKucGFPvgmTzbwIBOPfckgVp8zgOP/c029u23PozA/0FwigqKSIwEHNh1gVNHINpKRbxi7wCUcJ1CrBwFXtg6OQymZNS4QV7Y5C6VyXllmiWqhsmZpFi8qVKfbtOA5/H78YzpSJBUFq2T9ZHMZGn2ZnVLclzn2ET4CWl2BAlOATGzXRldFBSNjtdGYAWBfhcGXsvQtYq9Gwf46K78edMFY8MWV3Gp+AjnuHgDMjbqJ1Onq9F/xv0tu3+2U5nfe6uNhXiJKe1PJmc/mt8/CsG2ju7+59+QRKoDye8iHW7Wr1s/WbX/bvX0ZfnyJZMSFCpfyISMcYe93QgtCKL8Kj/wKBK84sSdNvavrMvj4pjp0l18Z/exU794W/CZxz6asSy1zyqq41p4MjBqbUKsWJexs9cbqOu4pGap13Jm9SncKhWpDaCZMQYU6s1Cp2jzUmqRX12nTREWuwYQJIDRbkDR6h0Kzg2bChQqdPqjUHFGotRvZLeuMhJ1Z5ziTuARzAXlBgeFYZSYqPERTeTOelYbMU+TCDoBkopjYxgD5HDO6NltDGhA4+aDAaeh5BIWTgwtZS1KuOpyHujfVLPmhjGUcmpHQEjAugGyBBAy/s5Qpff4QMimeGd5SVuM9hTjB7h1IjOiBbquCXmX38kqnmVoGyQACjviAAoOQx0NAqR/kQAtSTRoRXungdrvQV1VbX+N/QCGrwtKnsPsVKq9JCUWhEA==') format('woff2'),
+  url('//at.alicdn.com/t/font_1489446_1bqw1g6c4uy.woff?t=1572692488603') format('woff'),
+  url('//at.alicdn.com/t/font_1489446_1bqw1g6c4uy.ttf?t=1572692488603') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1489446_1bqw1g6c4uy.svg?t=1572692488603#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 100rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-sousuo:before {
+  content: "\e633";
+}
+
+/* 轮播区域 */
+.lunbo{
+  width: 750rpx;
+}
+.lunbo image{
+  width: 750rpx;
+  height: 300rpx;
+  display: inline;
+}
+
+/* 导航区域 */
+.nav{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding:30rpx 50rpx;
+}
+.nav image{
+  width: 74rpx;
+  height: 74rpx;
+}
+
+/* 课程区域 */
+.lesson{
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+/* 竖杠 */
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1489476_bowg77i6fj.eot?t=1572695110314'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1489476_bowg77i6fj.eot?t=1572695110314#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAJ8AAsAAAAABigAAAIwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAocQAE2AiQDCAsGAAQgBYRtB0YbfAXInpo8bZGaEGEkEnobEGBCBPX7sb33DxOJRNEsmsgkGpGQSBAbJVv2yJD/sNMOcfZFSvw8u6AZR1KAG862tWYpsDERqiSrGB7sYXZ/7zjNFVyV/vFtFZfG8T7P5fQm0IGsPlCue9BYkyb1AowDKaC9rSiyAgm9YeyCF3ifQKtJFDxc7r+hKdnLAnFrtAPNQkhKlm0WGhv2pnjSoLk8lAM8Rt+PX8NoUjRU7LqTm4UP4w9OXvWu364DQpiADjegwjogiYvG1JGKYBzWerxqFpBS8KGusVMc1SbYX2dXtoNxmA4+eEsFKPBYQyWaJj1H5H2nsXXs76L+lTFA/SmkukJpwk/e2/isrs3/ZluCl28ZBepPgmEe0LyNO/h2xcCuNFS2o6SmaDSU71Ues6FVK2qwfb3eqeaBC+VCs4EJniYTGSrN5slk19GgzQYaNdtBqzXmcJs+XUVkC1YtgNBto+j0jEq3Syb7oMGgH426o4JWV9F3ZpvFMO0DJkfIR/vC4qWJcl3SjquvpIvI4bwq4n+JbyaKistydkUJ8RIbxl0PpyiMnMaowWMURSlWTgPypJtFspEQselNXZfG0HaAEYcgPmS9oMKTSqigv2hXPn9FtELEwR0ddflfhN2Y0ZHCyQHkSp8M6niUV4Y7bWgSCopYKoY0mEUikRSqzbMCxCO68oREZkQ4veJQfXd7Y/x3B6CVbSnhjKmM3/2lxYusMFFoJ9E0YALjfE7R0yQaAAAA') format('woff2'),
+  url('//at.alicdn.com/t/font_1489476_bowg77i6fj.woff?t=1572695110314') format('woff'),
+  url('//at.alicdn.com/t/font_1489476_bowg77i6fj.ttf?t=1572695110314') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1489476_bowg77i6fj.svg?t=1572695110314#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-shouye_shugang_shijiantixing:before {
+  content: "\e62a";
+}
+
+.top_shugang{
+  display: flex;
+}
+.top_shugang image{
+  width: 20rpx;
+}
+.lesson_top{
+  display: flex;
+  justify-content: space-between;
+  padding:30rpx 40rpx 0rpx 40rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+}
+
+/* 课程下区 */
+.bottom_item{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.bottom_item image{
+  width: 330rpx;
+  height: 186rpx;
+  border-radius: 15rpx;
+}
+.item_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  width: 300rpx;
+}
+.item_content{
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 推荐课程区 */
+.recommend_content{
+  display: flex;
+  justify-content: space-between;
+}
